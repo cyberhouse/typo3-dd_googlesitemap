@@ -65,19 +65,19 @@ class AdditionalFieldsProvider implements \TYPO3\CMS\Scheduler\AdditionalFieldPr
 
 		$additionalFields['eIdUrl'] = array(
 			'code'     => '<textarea style="width:350px;height:200px" name="tx_scheduler[eIdUrl]" wrap="off">' . htmlspecialchars($url) . '</textarea>',
-			'label'    => 'LLL:EXT:dd_googlesitemap/locallang.xml:scheduler.eIDFieldLabel',
+			'label'    => 'LLL:EXT:dd_googlesitemap/Resources/Private/Language/locallang.xml:scheduler.eIDFieldLabel',
 			'cshKey'   => '',
 			'cshLabel' => ''
 		);
 		$additionalFields['indexFilePath'] = array(
 			'code'     => '<input class="wide" type="text" name="tx_scheduler[indexFilePath]" value="' . htmlspecialchars($indexFilePath) . '" />',
-			'label'    => 'LLL:EXT:dd_googlesitemap/locallang.xml:scheduler.indexFieldLabel',
+			'label'    => 'LLL:EXT:dd_googlesitemap/Resources/Private/Language/locallang.xml:scheduler.indexFieldLabel',
 			'cshKey'   => '',
 			'cshLabel' => ''
 		);
 		$additionalFields['maxUrlsPerSitemap'] = array(
 			'code'     => '<input type="text" name="tx_scheduler[maxUrlsPerSitemap]" value="' . $maxUrlsPerSitemap . '" />',
-			'label'    => 'LLL:EXT:dd_googlesitemap/locallang.xml:scheduler.maxUrlsPerSitemapLabel',
+			'label'    => 'LLL:EXT:dd_googlesitemap/Resources/Private/Language/locallang.xml:scheduler.maxUrlsPerSitemapLabel',
 			'cshKey'   => '',
 			'cshLabel' => ''
 		);
@@ -101,7 +101,7 @@ class AdditionalFieldsProvider implements \TYPO3\CMS\Scheduler\AdditionalFieldPr
 
 		foreach ($errors as $error) {
 			/** @noinspection PhpUndefinedMethodInspection */
-			$error = $GLOBALS['LANG']->sL('LLL:EXT:dd_googlesitemap/locallang.xml:' . $error);
+			$error = $GLOBALS['LANG']->sL('LLL:EXT:dd_googlesitemap/Resources/Private/Language/locallang.xml:' . $error);
 			$this->addErrorMessage($error);
 		}
 
