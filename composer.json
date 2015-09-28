@@ -1,5 +1,5 @@
 {
-  "name": "dmitrydulepov/dd-googlesitemap",
+  "name": "dmitrydulepov/dd_googlesitemap",
   "type": "typo3-cms-extension",
   "description": "Sitemaps",
   "homepage": "http://typo3.org",
@@ -15,6 +15,6 @@
     }
   },
   "replace": {
-    "dd-googlesitemap": "*"
+    "dd_googlesitemap": "*"
   }
 }
